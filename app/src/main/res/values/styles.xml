@@ -1,0 +1,82 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorText</item>
+    </style>
+
+    <style name="TextTitleStyleRegular" parent="AppTheme">
+        <item name="android:textColor">#cc000000</item>
+        <item name="android:textSize">20sp</item>
+
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+
+    </style>
+
+
+    <style name="TextTitleStyleBold" parent="AppTheme">
+        <item name="android:textColor">#cc000000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+
+    </style>
+
+    <style name="TextTitleStyleMedium" parent="AppTheme">
+        <item name="android:textColor">#cc000000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+
+    </style>
+
+
+    <style name="EditTextStyleMedium" parent="AppTheme">
+        <item name="android:textColor">#cc000000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+
+    </style>
+
+    <style name="EditTextStyleRegular" parent="AppTheme">
+        <item name="android:textColor">#cc000000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+
+    </style>
+
+    <style name="TextTitleStyleSemiBold" parent="AppTheme">
+        <item name="android:textColor">#cc000000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+
+    </style>
+
+
+    <style name="EditTextStyleBold" parent="AppTheme">
+        <item name="android:textColor">#cc000000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+
+    </style>
+
+
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/colorStock</item>
+        <item name="android:paddingStart" tools:ignore="NewApi">48dp</item>
+        <item name="android:paddingEnd" tools:ignore="NewApi">48dp</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+
+    </style>
+
+    <style name="SpinnerTheme" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/bg_spinner</item>
+    </style>
+
+</resources>

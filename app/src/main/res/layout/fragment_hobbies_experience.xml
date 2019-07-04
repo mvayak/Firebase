@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ScrollView
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_width="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:text="@string/hobbies"
+
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/label_stock_bg"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    style="@style/TextTitleStyleBold"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/frame_bg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <TextView
+                        android:text="@string/select_your_experience"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextTitleStyleBold"
+                        android:textSize="17sp"
+                        android:id="@+id/textView4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+                        app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="32dp"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:background="@drawable/rect_corner_bg"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:id="@+id/constraintLayoutStartingOut">
+
+
+                    <TextView
+                            android:text="@string/starting_out"
+                            style="@style/TextTitleStyleBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView5"
+                            android:textSize="24sp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginEnd="8dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginStart="16dp"
+                            app:layout_constraintEnd_toStartOf="@+id/imageViewStatingOut"/>
+                    <TextView
+                            android:text="@string/_1_3_years_experience"
+
+                            android:textSize="13sp"
+                            style="@style/TextTitleStyleSemiBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView7"
+
+                            app:layout_constraintTop_toBottomOf="@+id/textView5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="8dp"
+                            app:layout_constraintEnd_toStartOf="@+id/imageViewStatingOut"
+                            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="4dp"/>
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@mipmap/chevron_with_circle_down"
+                            android:id="@+id/imageViewStatingOut" app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout android:layout_width="0dp"
+                              android:orientation="vertical"
+                              android:id="@+id/linearLayoutExperienceOption"
+                              android:visibility="gone"
+                              android:layout_height="wrap_content" android:layout_marginTop="8dp"
+                              app:layout_constraintTop_toBottomOf="@+id/constraintLayoutStartingOut"
+                              app:layout_constraintStart_toStartOf="parent"
+                              app:layout_constraintEnd_toEndOf="parent">
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="vertical"
+                                  android:background="@drawable/rect_corner_bg"
+                                  android:layout_marginLeft="15dp"
+                                  android:id="@+id/linearLayoutIntermidate"
+                                  android:layout_marginBottom="2dp"
+                                  android:layout_marginRight="15dp"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_height="wrap_content">
+
+                        <TextView
+                                android:text="@string/intermidate"
+                                android:textSize="24sp"
+                                style="@style/TextTitleStyleBold"
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:id="@+id/textViewIntermidateTitle"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginLeft="16dp"/>
+
+                        <TextView
+                                android:text="@string/experience_4to10"
+                                android:textSize="13sp"
+                                style="@style/TextTitleStyleSemiBold"
+                                android:id="@+id/textViewIntermidateSubTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="0dp"
+                                android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="vertical"
+                                  android:background="@drawable/rect_corner_bg"
+                                  android:layout_marginLeft="15dp"
+                                  android:id="@+id/linearLayoutExpert"
+                                  android:layout_marginBottom="2dp"
+                                  android:layout_marginRight="15dp"
+                                  android:layout_marginTop="5dp"
+                                  android:layout_height="wrap_content">
+
+                        <TextView
+                                android:text="@string/expert"
+                                android:textSize="24sp"
+                                android:id="@+id/textViewExpertTitle"
+                                style="@style/TextTitleStyleBold"
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginLeft="16dp"/>
+
+                        <TextView
+                                android:text="@string/years_experience"
+
+                                style="@style/TextTitleStyleSemiBold"
+                                android:id="@+id/textViewExpertSubTitle"
+                                android:textSize="13sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="0dp"
+                                android:gravity="center"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                        android:text="@string/how_many_hours"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        style="@style/TextTitleStyleBold"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:id="@+id/textView8" android:layout_marginTop="32dp"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayoutExperienceOption"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="32dp" app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="32dp"/>
+
+                <LinearLayout android:layout_width="0dp"
+                              android:orientation="horizontal"
+                              android:id="@+id/linearLayoutWeek"
+                              android:layout_marginTop="16dp"
+                              android:background="@drawable/rect_corner_bg"
+                              android:layout_height="wrap_content"
+                              app:layout_constraintTop_toBottomOf="@+id/textView8"
+                              app:layout_constraintEnd_toEndOf="parent"
+                              app:layout_constraintStart_toStartOf="parent"
+                              android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+
+                    <LinearLayout android:layout_width="0dp"
+                                  android:layout_weight="1"
+                                  android:gravity="center"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical">
+
+                        <TextView
+                                android:text="@string/more_than_30"
+                                android:textSize="19sp"
+                                style="@style/TextTitleStyleBold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginBottom="16dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical">
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:id="@+id/imageViewWeek"
+                                app:srcCompat="@mipmap/chevron_with_circle_down"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="0dp"
+                              android:orientation="vertical"
+                              android:id="@+id/linearLayoutWeekOption"
+                              android:visibility="gone"
+                              android:layout_height="wrap_content" android:layout_marginTop="8dp"
+                              app:layout_constraintTop_toBottomOf="@+id/linearLayoutWeek"
+                              app:layout_constraintStart_toStartOf="parent"
+                              app:layout_constraintEnd_toEndOf="parent">
+
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:textSize="19sp"
+                            android:id="@+id/textViewLessHrs"
+                            style="@style/TextTitleStyleBold"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/rect_corner_bg"
+                            android:text="@string/less_than_30"/>
+
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            style="@style/TextTitleStyleBold"
+                            android:paddingTop="16dp"
+                            android:paddingBottom="16dp"
+                            android:id="@+id/textViewWhenNeed"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="19sp"
+                            android:background="@drawable/rect_corner_bg"
+                            android:text="@string/as_and_when_needed"/>
+
+
+                </LinearLayout>
+                <TextView
+                        android:text="where will you provide the service:"
+                        style="@style/TextTitleStyleBold"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView10"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="16dp"
+                        app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="32dp"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayoutWeekOption"/>
+
+
+                <TextView
+                        android:text="@string/student_home"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/rect_corner_bg"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        style="@style/TextTitleStyleBold"
+                        android:id="@+id/textViewStudentHome" android:layout_marginTop="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView10"
+                        app:layout_constraintStart_toStartOf="@+id/textView10"
+                        android:layout_marginStart="32dp"
+                        app:layout_constraintEnd_toEndOf="@+id/textView10"
+                        android:layout_marginEnd="32dp"/>
+
+
+                <TextView
+                        android:text="@string/my_home"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/rect_corner_bg"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        style="@style/TextTitleStyleBold"
+                        android:id="@+id/textViewMyHome" android:layout_marginTop="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewStudentHome"
+                        app:layout_constraintStart_toStartOf="@+id/textViewStudentHome"
+                        app:layout_constraintEnd_toEndOf="@+id/textViewStudentHome"
+                />
+
+                <com.google.android.material.button.MaterialButton
+                        android:text="@string/next"
+                        style="@style/ButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/buttonNext"
+
+                        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingBottom="10dp"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewMyHome"
+                        app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
+                        app:layout_constraintVertical_bias="0.45"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

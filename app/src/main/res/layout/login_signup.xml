@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="29sp"
+            app:strokeColor="@color/colorStock"
+            android:textColor="#cc000000"
+            android:fontFamily="@font/montserrat_bold"
+
+            android:text="@string/login"
+            android:textAllCaps="true"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonLogin"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonSignUp"
+            app:layout_constraintEnd_toEndOf="@+id/buttonSignUp"
+            app:layout_constraintStart_toStartOf="@+id/buttonSignUp"/>
+
+    <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_bold"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textSize="29sp"
+            app:strokeColor="@color/colorStock"
+            app:strokeWidth="1dp"
+            android:textColor="#cc000000"
+            android:text="@string/signup"
+            android:padding="10dp"
+            android:layout_height="wrap_content" android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/buttonSignUp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
